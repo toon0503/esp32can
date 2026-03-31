@@ -258,7 +258,7 @@ void app_main(void)
     ESP_LOGI(TAG, "AP started with SSID: ESP32-AP, password: 12345678");
 
     /* Register event handlers */
-    ESP_ERROR_CHECK(esp_event_handler_register(IP_EVENT, IP_EVENT_AP_STAIPASSIGNED, &connect_handler, &server));
+    ESP_ERROR_CHECK(esp_event_handler_register(IP_EVENT, IP_EVENT_ASSIGNED_IP_TO_CLIENT, &connect_handler, &server));
 
     /* Start the server for the first time */
     server = start_webserver();
