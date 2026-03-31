@@ -235,7 +235,8 @@ void app_main(void)
     ESP_ERROR_CHECK(esp_event_loop_create_default());
 
     /* Configure Wi-Fi in AP mode */
-    esp_netif_create_default_wifi_ap();
+    esp_netif_t *ap_netif = esp_netif_create_default_wifi_ap();
+    assert(ap_netif != NULL);
     wifi_init_config_t cfg = WIFI_INIT_CONFIG_DEFAULT();
     ESP_ERROR_CHECK(esp_wifi_init(&cfg));
 
