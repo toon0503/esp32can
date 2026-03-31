@@ -211,6 +211,260 @@
             font-size: 14px;
             margin-top: 10px;
         }
+        
+        /* 高级调试页面样式 */
+        .debug-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+        
+        .debug-header .back-btn {
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        
+        .debug-header .message-count {
+            background: #ff4757;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .debug-content {
+            padding: 20px;
+        }
+        
+        .debug-title {
+            text-align: center;
+            color: white;
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        
+        .status-info {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .status-text {
+            color: #666;
+            font-size: 14px;
+        }
+        
+        .log-count {
+            color: #333;
+            font-size: 14px;
+        }
+        
+        .debug-card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .debug-card h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .debug-card h3 i {
+            margin-right: 10px;
+            color: #667eea;
+        }
+        
+        .control-buttons {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .btn-start {
+            background: #4caf50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            flex: 1;
+        }
+        
+        .btn-stop {
+            background: #ff9800;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            flex: 1;
+        }
+        
+        .btn-analyze {
+            background: #9c27b0;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            flex: 1;
+        }
+        
+        .info-text {
+            font-size: 13px;
+            color: #666;
+            line-height: 1.4;
+            margin-bottom: 10px;
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        /* 详细分析页面样式 */
+        .detail-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+        
+        .detail-header .back-btn {
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        
+        .detail-header .title {
+            font-size: 16px;
+            font-weight: 600;
+        }
+        
+        .detail-content {
+            padding: 20px;
+        }
+        
+        .can-info {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+            font-size: 14px;
+            color: #333;
+        }
+        
+        .status-table {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .status-table h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 15px;
+        }
+        
+        .status-table table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 15px;
+        }
+        
+        .status-table th {
+            background: #f0f0f0;
+            padding: 8px;
+            text-align: left;
+            border: 1px solid #ddd;
+            font-size: 14px;
+        }
+        
+        .status-table td {
+            padding: 8px;
+            border: 1px solid #ddd;
+            font-size: 14px;
+        }
+        
+        .status-table select {
+            padding: 4px 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        
+        .btn-play {
+            background: #4caf50;
+            color: white;
+            padding: 6px 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        
+        .change-byte {
+            background: #fff3cd;
+            padding: 2px 4px;
+            border-radius: 2px;
+        }
+        
+        .cycle-info {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+            font-size: 14px;
+            color: #666;
+        }
+        
+        .save-btn {
+            background: #667eea;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
     </style>
 </head>
 <body>
@@ -238,52 +492,373 @@
         <div class="title">CAN Bridge 主页</div>
         
         <div class="tabs">
-            <div class="tab active">CAN收发</div>
-            <div class="tab">高级调试</div>
-            <div class="tab">关于</div>
+            <div class="tab active" data-tab="can-transmit">CAN收发</div>
+            <div class="tab" data-tab="advanced-debug">高级调试</div>
+            <div class="tab" data-tab="about">关于</div>
         </div>
         
-        <div class="status-bar">
-            <div class="loading">加载中...</div>
-            <div class="ip-address">IP: 192.168.4.1</div>
-        </div>
-        
-        <div class="task-card">
-            <div class="task-header">
-                <div class="task-icon">🕒</div>
-                <div class="task-title">自动发送任务</div>
-                <div class="task-buttons">
-                    <button class="btn btn-secondary">排序</button>
-                    <button class="btn btn-secondary">配置</button>
-                    <button class="btn btn-success">启用</button>
+        <!-- CAN收发页面 -->
+        <div class="tab-content active" id="can-transmit">
+            <div class="status-bar">
+                <div class="loading">加载中...</div>
+                <div class="ip-address">IP: 192.168.4.1</div>
+            </div>
+            
+            <div class="task-card">
+                <div class="task-header">
+                    <div class="task-icon">🕒</div>
+                    <div class="task-title">自动发送任务</div>
+                    <div class="task-buttons">
+                        <button class="btn btn-secondary">排序</button>
+                        <button class="btn btn-secondary config-btn" data-type="auto">配置</button>
+                        <button class="btn btn-success">启用</button>
+                    </div>
+                </div>
+                <div class="loading-text">加载中...</div>
+            </div>
+            
+            <div class="task-card">
+                <div class="task-header">
+                    <div class="task-icon">▶</div>
+                    <div class="task-title">序列发送任务</div>
+                    <div class="task-buttons">
+                        <button class="btn btn-secondary config-btn" data-type="sequence">+配置</button>
+                        <label style="display: flex; align-items: center; font-size: 12px; color: #666;">
+                            启用
+                            <input type="checkbox" class="checkbox">
+                        </label>
+                    </div>
+                </div>
+                <div class="loading-text">加载中...</div>
+            </div>
+            
+            <!-- 配置模态框 -->
+            <div id="config-modal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 1000; justify-content: center; align-items: center;">
+                <div style="background: white; padding: 20px; border-radius: 8px; width: 90%; max-width: 500px;">
+                    <h3 style="margin-bottom: 15px;">任务配置</h3>
+                    <div style="margin-bottom: 15px;">
+                        <label style="display: block; margin-bottom: 5px;">选择功能:</label>
+                        <select id="function-select" style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px;">
+                            <option>请选择功能</option>
+                        </select>
+                    </div>
+                    <div style="margin-bottom: 15px;">
+                        <label style="display: block; margin-bottom: 5px;">发送周期 (ms):</label>
+                        <input type="number" id="period-input" style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px;" value="1000">
+                    </div>
+                    <div style="display: flex; justify-content: flex-end; gap: 10px;">
+                        <button id="cancel-btn" style="padding: 8px 16px; border: 1px solid #ddd; border-radius: 4px; background: #f0f0f0; cursor: pointer;">取消</button>
+                        <button id="save-config-btn" style="padding: 8px 16px; border: none; border-radius: 4px; background: #667eea; color: white; cursor: pointer;">保存</button>
+                    </div>
                 </div>
             </div>
-            <div class="loading-text">加载中...</div>
         </div>
         
-        <div class="task-card">
-            <div class="task-header">
-                <div class="task-icon">▶</div>
-                <div class="task-title">序列发送任务</div>
-                <div class="task-buttons">
-                    <button class="btn btn-secondary">+配置</button>
-                    <label style="display: flex; align-items: center; font-size: 12px; color: #666;">
-                        启用
-                        <input type="checkbox" class="checkbox">
-                    </label>
+        <!-- 高级调试页面 -->
+        <div class="tab-content" id="advanced-debug">
+            <div class="debug-header">
+                <button class="back-btn" onclick="switchTab('can-transmit')">返回主页</button>
+                <div class="message-count">1547</div>
+            </div>
+            
+            <div class="debug-content">
+                <div class="debug-title">高级CAN调试</div>
+                
+                <div class="status-info">
+                    <div class="status-text">等待开始...</div>
+                    <div class="log-count">本地日志: 12302条</div>
+                </div>
+                
+                <div class="debug-card">
+                    <h3>📡 CAN接收控制</h3>
+                    <div class="control-buttons">
+                        <button class="btn-start">开始接收</button>
+                        <button class="btn-stop">停止接收</button>
+                        <button class="btn-analyze">分析</button>
+                    </div>
+                    <div class="info-text">
+                        <p>📝 日志存储在浏览器本地，最大支持10万条，刷新页面不会丢失</p>
+                        <p>点击"开始接收"后，CAN总线接收到的报文将实时显示并存储在浏览器中</p>
+                    </div>
+                </div>
+                
+                <div class="debug-card">
+                    <h3>📊 分析结果</h3>
+                    <div id="analysis-result" style="display: none;">
+                        <div style="margin-bottom: 15px; padding: 10px; background: #f5f5f5; border-radius: 4px;">
+                            <p style="font-weight: 500; color: #333;">找到的报文（多种状态）</p>
+                            <p style="color: #666; font-size: 14px;">找到 7 个可测试报文</p>
+                        </div>
+                        
+                        <table style="width: 100%; border-collapse: collapse; margin-bottom: 20px;">
+                            <thead>
+                                <tr style="background: #f0f0f0;">
+                                    <th style="padding: 8px; text-align: left; border: 1px solid #ddd; font-size: 14px;">CAN ID</th>
+                                    <th style="padding: 8px; text-align: left; border: 1px solid #ddd; font-size: 14px;">周期</th>
+                                    <th style="padding: 8px; text-align: left; border: 1px solid #ddd; font-size: 14px;">状态数</th>
+                                    <th style="padding: 8px; text-align: left; border: 1px solid #ddd; font-size: 14px;">详细</th>
+                                    <th style="padding: 8px; text-align: left; border: 1px solid #ddd; font-size: 14px;">操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr data-id="0x5E0">
+                                    <td style="padding: 8px; border: 1px solid #ddd; font-size: 14px;">0x5E0</td>
+                                    <td style="padding: 8px; border: 1px solid #ddd; font-size: 14px;">50ms</td>
+                                    <td style="padding: 8px; border: 1px solid #ddd; font-size: 14px;">88种</td>
+                                    <td style="padding: 8px; border: 1px solid #ddd; font-size: 14px;"><button class="btn btn-primary">详细</button></td>
+                                    <td style="padding: 8px; border: 1px solid #ddd; font-size: 14px;"><button class="btn btn-success select-btn">选择</button></td>
+                                </tr>
+                                <tr data-id="0x5F0">
+                                    <td style="padding: 8px; border: 1px solid #ddd; font-size: 14px;">0x5F0</td>
+                                    <td style="padding: 8px; border: 1px solid #ddd; font-size: 14px;">200ms</td>
+                                    <td style="padding: 8px; border: 1px solid #ddd; font-size: 14px;">6种</td>
+                                    <td style="padding: 8px; border: 1px solid #ddd; font-size: 14px;"><button class="btn btn-primary">详细</button></td>
+                                    <td style="padding: 8px; border: 1px solid #ddd; font-size: 14px;"><button class="btn btn-success select-btn">选择</button></td>
+                                </tr>
+                                <tr data-id="0x598">
+                                    <td style="padding: 8px; border: 1px solid #ddd; font-size: 14px;">0x598</td>
+                                    <td style="padding: 8px; border: 1px solid #ddd; font-size: 14px;">200ms</td>
+                                    <td style="padding: 8px; border: 1px solid #ddd; font-size: 14px;">5种</td>
+                                    <td style="padding: 8px; border: 1px solid #ddd; font-size: 14px;"><button class="btn btn-primary">详细</button></td>
+                                    <td style="padding: 8px; border: 1px solid #ddd; font-size: 14px;"><button class="btn btn-success select-btn">选择</button></td>
+                                </tr>
+                                <tr data-id="0x598">
+                                    <td style="padding: 8px; border: 1px solid #ddd; font-size: 14px;">0x598</td>
+                                    <td style="padding: 8px; border: 1px solid #ddd; font-size: 14px;">200ms</td>
+                                    <td style="padding: 8px; border: 1px solid #ddd; font-size: 14px;">5种</td>
+                                    <td style="padding: 8px; border: 1px solid #ddd; font-size: 14px;"><button class="btn btn-primary">详细</button></td>
+                                    <td style="padding: 8px; border: 1px solid #ddd; font-size: 14px;"><button class="btn btn-success select-btn">选择</button></td>
+                                </tr>
+                                <tr data-id="0x6B4">
+                                    <td style="padding: 8px; border: 1px solid #ddd; font-size: 14px;">0x6B4</td>
+                                    <td style="padding: 8px; border: 1px solid #ddd; font-size: 14px;">200ms</td>
+                                    <td style="padding: 8px; border: 1px solid #ddd; font-size: 14px;">3种</td>
+                                    <td style="padding: 8px; border: 1px solid #ddd; font-size: 14px;"><button class="btn btn-primary">详细</button></td>
+                                    <td style="padding: 8px; border: 1px solid #ddd; font-size: 14px;"><button class="btn btn-success select-btn">选择</button></td>
+                                </tr>
+                                <tr data-id="0x663">
+                                    <td style="padding: 8px; border: 1px solid #ddd; font-size: 14px;">0x663</td>
+                                    <td style="padding: 8px; border: 1px solid #ddd; font-size: 14px;">100ms</td>
+                                    <td style="padding: 8px; border: 1px solid #ddd; font-size: 14px;">2种</td>
+                                    <td style="padding: 8px; border: 1px solid #ddd; font-size: 14px;"><button class="btn btn-primary">详细</button></td>
+                                    <td style="padding: 8px; border: 1px solid #ddd; font-size: 14px;"><button class="btn btn-success select-btn">选择</button></td>
+                                </tr>
+                                <tr data-id="0x3EA">
+                                    <td style="padding: 8px; border: 1px solid #ddd; font-size: 14px;">0x3EA</td>
+                                    <td style="padding: 8px; border: 1px solid #ddd; font-size: 14px;">200ms</td>
+                                    <td style="padding: 8px; border: 1px solid #ddd; font-size: 14px;">2种</td>
+                                    <td style="padding: 8px; border: 1px solid #ddd; font-size: 14px;"><button class="btn btn-primary">详细</button></td>
+                                    <td style="padding: 8px; border: 1px solid #ddd; font-size: 14px;"><button class="btn btn-success select-btn">选择</button></td>
+                                </tr>
+                                <tr data-id="0x6B2">
+                                    <td style="padding: 8px; border: 1px solid #ddd; font-size: 14px;">0x6B2</td>
+                                    <td style="padding: 8px; border: 1px solid #ddd; font-size: 14px;">1000ms</td>
+                                    <td style="padding: 8px; border: 1px solid #ddd; font-size: 14px;">2种</td>
+                                    <td style="padding: 8px; border: 1px solid #ddd; font-size: 14px;"><button class="btn btn-primary">详细</button></td>
+                                    <td style="padding: 8px; border: 1px solid #ddd; font-size: 14px;"><button class="btn btn-success select-btn">选择</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <button class="btn-start" style="width: 100%; padding: 12px; font-size: 16px;">🧪 测试发送</button>
+                    </div>
+                    <div id="analysis-hint" class="info-text">
+                        <p>停止接收，点击分析按钮，点击'分析'按钮查看结果</p>
+                    </div>
                 </div>
             </div>
-            <div class="loading-text">加载中...</div>
+        </div>
+        
+        <!-- 关于页面 -->
+        <div class="tab-content" id="about">
+            <div class="debug-header">
+                <button class="back-btn" onclick="switchTab('can-transmit')">返回主页</button>
+            </div>
+            
+            <div class="debug-content">
+                <div class="debug-title">关于CAN Bridge</div>
+                
+                <div class="debug-card">
+                    <h3>ℹ️ 应用信息</h3>
+                    <div class="info-text">
+                        <p>版本: 1.0.0</p>
+                        <p>作者: ESP32 CAN Bridge Team</p>
+                        <p>功能: CAN总线监控与控制</p>
+                    </div>
+                </div>
+                
+                <div class="debug-card">
+                    <h3>📄 版权信息</h3>
+                    <div class="info-text">
+                        <p>© 2026 CAN Bridge. 保留所有权利。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 详细分析页面 -->
+        <div class="tab-content" id="detail-analysis">
+            <div class="detail-header">
+                <button class="back-btn" onclick="switchTab('advanced-debug')">返回分析</button>
+                <div class="title">报文详细分析 - 0x598</div>
+            </div>
+            
+            <div class="detail-content">
+                <div class="can-info">
+                    CAN ID: 0x598 | 周期: 200ms | 状态数: 5种
+                </div>
+                
+                <div class="status-table">
+                    <h3>所有状态 (5种)</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>状态</th>
+                                <th>功能</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div>状态1</div>
+                                    <div>00 00 00 00 00 00 00 00</div>
+                                </td>
+                                <td>
+                                    <select class="function-select">
+                                        <option>请选择</option>
+                                        <option value="invalid">无效</option>
+                                        <option value="valid">有效</option>
+                                    </select>
+                                    <div class="function-name" style="margin-top: 5px; display: none;">
+                                        <input type="text" placeholder="输入功能名称" style="width: 100%; padding: 4px; border: 1px solid #ddd; border-radius: 4px; font-size: 12px;">
+                                    </div>
+                                </td>
+                                <td>
+                                    <button class="btn-play">播放</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div>状态2</div>
+                                    <div>00 00 00 00 00 00 00 <span class="change-byte">03</span></div>
+                                </td>
+                                <td>
+                                    <select class="function-select">
+                                        <option>请选择</option>
+                                        <option value="invalid">无效</option>
+                                        <option value="valid">有效</option>
+                                    </select>
+                                    <div class="function-name" style="margin-top: 5px; display: none;">
+                                        <input type="text" placeholder="输入功能名称" style="width: 100%; padding: 4px; border: 1px solid #ddd; border-radius: 4px; font-size: 12px;">
+                                    </div>
+                                </td>
+                                <td>
+                                    <button class="btn-play">播放</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div>状态3</div>
+                                    <div>00 00 00 00 00 00 00 <span class="change-byte">04</span></div>
+                                </td>
+                                <td>
+                                    <select class="function-select">
+                                        <option>请选择</option>
+                                        <option value="invalid">无效</option>
+                                        <option value="valid">有效</option>
+                                    </select>
+                                    <div class="function-name" style="margin-top: 5px; display: none;">
+                                        <input type="text" placeholder="输入功能名称" style="width: 100%; padding: 4px; border: 1px solid #ddd; border-radius: 4px; font-size: 12px;">
+                                    </div>
+                                </td>
+                                <td>
+                                    <button class="btn-play">播放</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div>状态4</div>
+                                    <div>00 00 00 00 00 00 00 <span class="change-byte">01</span></div>
+                                </td>
+                                <td>
+                                    <select class="function-select">
+                                        <option>请选择</option>
+                                        <option value="invalid">无效</option>
+                                        <option value="valid">有效</option>
+                                    </select>
+                                    <div class="function-name" style="margin-top: 5px; display: none;">
+                                        <input type="text" placeholder="输入功能名称" style="width: 100%; padding: 4px; border: 1px solid #ddd; border-radius: 4px; font-size: 12px;">
+                                    </div>
+                                </td>
+                                <td>
+                                    <button class="btn-play">播放</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div>状态5</div>
+                                    <div>00 00 00 00 00 00 00 <span class="change-byte">02</span></div>
+                                </td>
+                                <td>
+                                    <select class="function-select">
+                                        <option>请选择</option>
+                                        <option value="invalid">无效</option>
+                                        <option value="valid">有效</option>
+                                    </select>
+                                    <div class="function-name" style="margin-top: 5px; display: none;">
+                                        <input type="text" placeholder="输入功能名称" style="width: 100%; padding: 4px; border: 1px solid #ddd; border-radius: 4px; font-size: 12px;">
+                                    </div>
+                                </td>
+                                <td>
+                                    <button class="btn-play">播放</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div style="font-size: 13px; color: #666; margin-bottom: 15px;">
+                        <span style="background: #fff3cd; padding: 2px 4px; border-radius: 2px;">黄色背景</span> 表示变化的字节
+                    </div>
+                </div>
+                
+                <div class="cycle-info">
+                    报文周期: 200ms (自动从接收数据计算)
+                </div>
+                
+                <button class="save-btn">💾 保存功能配置</button>
+            </div>
         </div>
     </div>
     
     <script>
         // 切换标签页
         const tabs = document.querySelectorAll('.tab');
+        const tabContents = document.querySelectorAll('.tab-content');
+        
+        function switchTab(tabId) {
+            // 切换标签
+            tabs.forEach(tab => {
+                if (tab.dataset.tab === tabId) {
+                    tab.classList.add('active');
+                } else {
+                    tab.classList.remove('active');
+                }
+            });
+            
+            // 切换内容
+            tabContents.forEach(content => {
+                if (content.id === tabId) {
+                    content.classList.add('active');
+                } else {
+                    content.classList.remove('active');
+                }
+            });
+        }
+        
         tabs.forEach(tab => {
             tab.addEventListener('click', () => {
-                tabs.forEach(t => t.classList.remove('active'));
-                tab.classList.add('active');
+                const tabId = tab.dataset.tab;
+                switchTab(tabId);
             });
         });
         
@@ -314,6 +889,164 @@
             btn.addEventListener('click', function() {
                 console.log(this.textContent + ' 按钮被点击');
             });
+        });
+        
+        // 调试页面按钮事件
+        document.querySelector('.btn-start').addEventListener('click', function() {
+            console.log('开始接收');
+            document.querySelector('.status-text').textContent = '接收中...';
+        });
+        
+        document.querySelector('.btn-stop').addEventListener('click', function() {
+            console.log('停止接收');
+            document.querySelector('.status-text').textContent = '已停止';
+        });
+        
+        document.querySelector('.btn-analyze').addEventListener('click', function() {
+            console.log('分析数据');
+            document.getElementById('analysis-hint').style.display = 'none';
+            document.getElementById('analysis-result').style.display = 'block';
+        });
+        
+        // 详细按钮点击事件
+        document.querySelectorAll('.btn-primary').forEach(btn => {
+            btn.addEventListener('click', function() {
+                console.log('查看详细信息');
+                switchTab('detail-analysis');
+            });
+        });
+        
+        // 选择按钮点击事件
+        let selectedId = null;
+        document.querySelectorAll('.select-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                // 移除之前的选择状态
+                document.querySelectorAll('.select-btn').forEach(b => {
+                    b.style.backgroundColor = '#4caf50';
+                });
+                // 设置当前选择状态
+                this.style.backgroundColor = '#2196F3';
+                // 获取选择的 ID
+                const row = this.closest('tr');
+                selectedId = row.dataset.id;
+                console.log('选择报文: ' + selectedId);
+                alert('已选择报文: ' + selectedId);
+            });
+        });
+        
+        // 测试发送按钮点击事件
+        document.querySelector('.btn-start[style*="width: 100%"]').addEventListener('click', function() {
+            // 如果没有选择，默认选择第一行
+            if (!selectedId) {
+                const firstRow = document.querySelector('tr[data-id]');
+                if (firstRow) {
+                    selectedId = firstRow.dataset.id;
+                    // 标记第一行为选中状态
+                    const firstSelectBtn = firstRow.querySelector('.select-btn');
+                    if (firstSelectBtn) {
+                        firstSelectBtn.style.backgroundColor = '#2196F3';
+                    }
+                }
+            }
+            console.log('测试发送: ' + selectedId);
+            alert('测试发送已执行，发送报文 ID: ' + selectedId);
+        });
+        
+        // 播放按钮点击事件
+        document.querySelectorAll('.btn-play').forEach(btn => {
+            btn.addEventListener('click', function() {
+                console.log('播放测试');
+                alert('播放测试已执行');
+            });
+        });
+        
+        // 功能选择事件
+        document.querySelectorAll('.function-select').forEach(select => {
+            select.addEventListener('change', function() {
+                const functionNameDiv = this.nextElementSibling;
+                if (this.value === 'valid') {
+                    functionNameDiv.style.display = 'block';
+                } else {
+                    functionNameDiv.style.display = 'none';
+                }
+            });
+        });
+        
+        // 保存配置按钮点击事件
+        document.querySelector('.save-btn').addEventListener('click', function() {
+            console.log('保存功能配置');
+            
+            // 收集所有功能配置
+            const configurations = [];
+            document.querySelectorAll('.function-select').forEach((select, index) => {
+                const value = select.value;
+                if (value === 'valid') {
+                    const functionNameInput = select.nextElementSibling.querySelector('input');
+                    const functionName = functionNameInput.value || `功能${index + 1}`;
+                    configurations.push({
+                        status: `状态${index + 1}`,
+                        function: functionName,
+                        data: select.closest('tr').querySelector('td:first-child div:nth-child(2)').textContent.trim()
+                    });
+                }
+            });
+            
+            // 保存配置到本地存储
+            localStorage.setItem('canBridgeConfigurations', JSON.stringify(configurations));
+            
+            console.log('保存的配置:', configurations);
+            alert('功能配置已保存，可在主页的自动发送任务和序列发送任务中调用');
+        });
+        
+        // 配置按钮点击事件
+        document.querySelectorAll('.config-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const taskType = this.dataset.type;
+                console.log('打开配置模态框:', taskType);
+                
+                // 加载已保存的功能
+                const functionSelect = document.getElementById('function-select');
+                functionSelect.innerHTML = '<option>请选择功能</option>';
+                
+                const savedConfigs = localStorage.getItem('canBridgeConfigurations');
+                if (savedConfigs) {
+                    const configs = JSON.parse(savedConfigs);
+                    configs.forEach(config => {
+                        const option = document.createElement('option');
+                        option.value = JSON.stringify(config);
+                        option.textContent = config.function;
+                        functionSelect.appendChild(option);
+                    });
+                }
+                
+                // 显示模态框
+                document.getElementById('config-modal').style.display = 'flex';
+            });
+        });
+        
+        // 取消按钮点击事件
+        document.getElementById('cancel-btn').addEventListener('click', function() {
+            document.getElementById('config-modal').style.display = 'none';
+        });
+        
+        // 保存配置按钮点击事件
+        document.getElementById('save-config-btn').addEventListener('click', function() {
+            const functionSelect = document.getElementById('function-select');
+            const periodInput = document.getElementById('period-input');
+            
+            if (functionSelect.value === '请选择功能') {
+                alert('请选择功能');
+                return;
+            }
+            
+            const selectedConfig = JSON.parse(functionSelect.value);
+            const period = periodInput.value;
+            
+            console.log('保存任务配置:', { function: selectedConfig.function, period });
+            alert('任务配置已保存');
+            
+            // 关闭模态框
+            document.getElementById('config-modal').style.display = 'none';
         });
     </script>
 </body>
